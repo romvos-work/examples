@@ -17,9 +17,13 @@
         <?php foreach($widget->data ?? [] as $item) { ?>
         <tr> 
             <?php foreach($widget->fields ?? [] as $field) { ?>
-                <td><?= $item[$field] ?? '' ?></td>
+                <td><?= $item[$field] ?? ''; ?></td>
             <?php } ?>  
         </tr>
         <?php } ?>
     </tbody>
 </table>
+<hr>
+<p>
+    Итого: <?= count($widget->data ?? []) ?: 0; ?>
+</p>

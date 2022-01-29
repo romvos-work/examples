@@ -72,7 +72,7 @@ class MyWidgetTable
 
     public function renderContent()
     {
-        $view = '/app/runtime/files/widget.php';
+        $view = __DIR__ . '/widget.php';
         return MyView::renderPhp($view, ['widget' => $this]);
     }
 }
